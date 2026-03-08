@@ -1,13 +1,20 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+const sections = document.querySelectorAll(".slide");
 
-anchor.addEventListener('click', function (e) {
+window.addEventListener("scroll", () => {
 
-e.preventDefault();
+const triggerBottom = window.innerHeight * 0.8;
 
-document.querySelector(this.getAttribute('href'))
-.scrollIntoView({
-behavior: 'smooth'
-});
+sections.forEach(section => {
+
+const sectionTop = section.getBoundingClientRect().top;
+
+if(sectionTop < triggerBottom){
+
+section.style.opacity = 1;
+
+section.style.transform = "translateY(0)";
+
+}
 
 });
 
