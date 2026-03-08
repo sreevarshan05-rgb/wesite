@@ -1,21 +1,36 @@
-const sections = document.querySelectorAll(".slide");
+const typingText = [
+"Data Scientist",
+"Machine Learning Engineer",
+"Data Analyst"
+];
 
-window.addEventListener("scroll", () => {
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
 
-const triggerBottom = window.innerHeight * 0.8;
+(function type(){
 
-sections.forEach(section => {
+if(count === typingText.length){
 
-const sectionTop = section.getBoundingClientRect().top;
-
-if(sectionTop < triggerBottom){
-
-section.style.opacity = 1;
-
-section.style.transform = "translateY(0)";
+count = 0;
 
 }
 
-});
+currentText = typingText[count];
 
-});
+letter = currentText.slice(0, ++index);
+
+document.querySelector(".typing").textContent = letter;
+
+if(letter.length === currentText.length){
+
+count++;
+
+index = 0;
+
+}
+
+setTimeout(type,100);
+
+})();
