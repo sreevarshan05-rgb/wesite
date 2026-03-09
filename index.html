@@ -1,6 +1,3 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,51 +12,56 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 
 <body>
 
+<!-- NAVBAR -->
+
 <nav>
 
-<h2 class="logo">sree varshan.io</h2>
+<h2 class="logo">Sree Varshan</h2>
 
 <ul>
+
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
 <li><a href="#experience">Experience</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#contact">Contact</a></li>
+
 </ul>
 
 </nav>
 
+
+<!-- HERO -->
 
 <section class="hero">
 
 <div class="hero-container">
 
 <div class="hero-image">
-<img src="assets/Sree Varshan.jpeg" alt="Sree Varshan">
+<img src="assets/Sree Varshan.jpeg">
 </div>
 
 <div class="hero-text">
 
 <h1>Hello I'm <span>Sree Varshan</span></h1>
 
-<h2>Data Scientist</h2>
+<h2 class="typing"></h2>
 
 <div class="hero-buttons">
 
-<a href="https://drive.google.com/drive/folders/1JKCWzII0h6NGtm0S_GEa50ql2Wq0koln?usp=drive_link" class="btn">Download Resume</a>
+<a href="#" class="btn">Download Resume</a>
 
-<a href="https://github.com/Sreevarshan-fin" target="_blank" class="social github">
-GitHub
-</a>
+<a href="https://github.com/Sreevarshan-fin" class="social github">GitHub</a>
 
-<a href="https://linkedin.com/in/yourlinkedin" target="_blank" class="social linkedin">
-LinkedIn
-</a>
+<a href="#" class="social linkedin">LinkedIn</a>
 
 </div>
 
@@ -70,50 +72,24 @@ LinkedIn
 </section>
 
 
-
+<!-- ABOUT -->
 
 <section id="about" class="section">
 
 <h1>About Me</h1>
 
-<div class="about-container">
-
-<div class="about-text">
-
 <p>
-If you're looking for someone who can contribute across Data Science and AI with experience in Machine Learning, NLP, and modern LLM systems — that’s exactly where I focus.
+
+If you're looking for someone who can contribute across Data Science and AI
+with experience in Machine Learning, NLP, and modern LLM systems — that’s
+exactly where I focus.
+
 </p>
-
-<p>
-I enjoy working with data to support better business decisions by combining machine learning, statistical thinking, and practical analytics. My focus is on building models that deliver reliable, explainable, and business-useful predictions.
-</p>
-
-<p>
-I work across the machine learning lifecycle, including data preparation, feature engineering, model development, evaluation, experimentation, and deployment. My toolkit includes Python, SQL, and AWS SageMaker, along with modern analytics tools for transforming data into actionable insights.
-</p>
-
-<p>
-I’m continuously deepening my expertise in AI systems, particularly in Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and Generative AI, and I’m excited to contribute to teams building impactful data and AI solutions.
-</p>
-
-</div>
-
-
-<div class="about-video">
-
-<video controls width="420">
-
-<source src="assets/about-video.mp4" type="video/mp4">
-
-</video>
-
-</div>
-
-</div>
 
 </section>
 
 
+<!-- SKILLS -->
 
 <section id="skills" class="section">
 
@@ -132,16 +108,13 @@ I’m continuously deepening my expertise in AI systems, particularly in Large L
 <span class="skill-badge">LLM</span>
 <span class="skill-badge">RAG</span>
 <span class="skill-badge">Generative AI</span>
-<span class="skill-badge">AWS SageMaker</span>
-<span class="skill-badge">MLflow</span>
-<span class="skill-badge">NLP</span>
-<span class="skill-badge">Power BI</span>
 
 </div>
 
 </section>
 
 
+<!-- EXPERIENCE -->
 
 <section id="experience" class="section">
 
@@ -151,159 +124,132 @@ I’m continuously deepening my expertise in AI systems, particularly in Large L
 
 <h3>Data Analyst Intern – AtliQ Technologies</h3>
 
-<p>Worked on data cleaning, EDA, and business analysis using Python, SQL and Excel.</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Power BI Developer Intern – Foresight BI</h3>
-
-<p>Developed dashboards analyzing pharmaceutical sales and marketing data.</p>
+<p>Worked on data cleaning and analysis.</p>
 
 </div>
 
 </section>
 
 
+<!-- PROJECTS -->
 
 <section id="projects" class="section">
 
-<h1>Projects</h1>
+<h1>My Projects</h1>
 
 <div class="projects-grid">
 
 
 <div class="project-card">
 
+<img src="assets/bad-debt.png" class="project-thumb">
+
 <h3>Bad Debt Prediction</h3>
 
-<p>
-A credit-based company faced financial losses because some high-risk customers were approved for loans and later defaulted on payments. 
-To address this challenge, 100K+ customer credit and behavioral records were analyzed to identify patterns associated with loan default.
-</p>
+<p>Machine Learning Project</p>
 
-<p>
-A machine learning model was developed to predict bad debt risk before loan approval, enabling risk-aware lending decisions and improving credit evaluation processes.
-</p>
-
-<p>
-The model achieved <strong>ROC-AUC ≈ 0.74</strong>, <strong>KS ≈ 34%</strong>, and successfully detected around 
-<strong>60% of risky applicants</strong>, helping reduce potential credit losses through early risk identification.
-</p>
-
-<p><strong>Tools:</strong> Python, Scikit-learn, Feature Engineering, Model Evaluation</p>
-
-<a href="https://github.com/Sreevarshan-fin/1_Bad_Debt_Prediction" target="_blank" class="project-btn">
-View on GitHub
-</a>
+<button onclick="openModal('baddebt')" class="project-btn">
+See My Work
+</button>
 
 </div>
 
 
 <div class="project-card">
 
-<h3>Credit Card Campaign Analysis</h3>
+<img src="assets/credit-card.png" class="project-thumb">
 
-<p>
-A growing bank wanted to expand its credit card business but faced low adoption due to ineffective customer targeting. 
-To address this, transaction and customer data (500K+ records) were analyzed to identify high-potential customer segments.
-</p>
+<h3>Credit Card Campaign</h3>
 
-<p>
-Exploratory data analysis revealed that the <strong>18–25 age group</strong> demonstrated strong spending behavior but had relatively low credit card adoption. 
-Based on this insight, a targeted campaign strategy was designed to improve engagement.
-</p>
+<p>Statistical Analysis</p>
 
-<p>
-A randomized <strong>A/B test</strong> was implemented to evaluate the effectiveness of the new campaign. 
-Statistical testing showed a <strong>6.7% increase in average spending</strong> and approximately 
-<strong>40% conversion</strong>, validating the strategy for broader rollout.
-</p>
-
-<p><strong>Tools:</strong> Python, Pandas, Statistical Testing, Data Analysis</p>
-
-<a href="https://github.com/Sreevarshan-fin/Hypothesis---Testing--Bank--Credit-Card-Project/tree/main" target="_blank" class="project-btn">
-View on GitHub
-</a>
+<button onclick="openModal('creditcard')" class="project-btn">
+See My Work
+</button>
 
 </div>
 
 
 <div class="project-card">
+
+<img src="assets/map.png" class="project-thumb">
 
 <h3>MAP Compliance Monitoring</h3>
 
-<p>
-A brand selling across multiple marketplaces struggled to enforce Minimum Advertised Price (MAP) policies because reseller prices frequently changed and many sellers operated under multiple storefront aliases. This made manual monitoring extremely difficult and inconsistent.
-</p>
+<p>Automation System</p>
 
-<p>
-To address this challenge, an automated MAP compliance monitoring system was developed to track more than <strong>150K product listings</strong> from <strong>901 sellers across 5 marketplaces</strong>. The system continuously analyzes marketplace pricing data to detect violations of MAP and Lowest Price Policy (LPP) rules.
-</p>
+<button onclick="openModal('map')" class="project-btn">
+See My Work
+</button>
 
-<p>
-The pipeline consolidates reseller identities, identifies pricing violations, and triggers automated enforcement actions. This significantly reduced manual monitoring work and improved the effectiveness of pricing policy enforcement across marketplaces.
-</p>
+</div>
 
-<p><strong>Tools:</strong> Python, SQL, Pandas, Data Automation,Report-lab</p>
-
-<a href="https://github.com/Sreevarshan-fin/Minimum-Advertised-Price-Compliance-Automation-System" target="_blank" class="project-btn">
-View on GitHub
-</a>
 
 </div>
 
 </section>
 
 
+
+<!-- PROJECT MODAL -->
+
+<div id="projectModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">&times;</span>
+
+<div class="modal-grid">
+
+<div>
+
+<h2 id="modal-title"></h2>
+
+<p id="modal-desc"></p>
+
+<a id="modal-github" class="project-btn" target="_blank">
+View on GitHub
+</a>
+
+</div>
+
+<div>
+
+<img id="modal-img">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- CONTACT -->
+
 <section id="contact" class="contact-section">
 
-<h1>Let's Work Together!</h1>
-
-<p class="contact-sub">
-Feel free to get in touch with me. I'm always open to discussing new projects and opportunities.
-</p>
+<h1>Contact</h1>
 
 <div class="contact-grid">
 
 <div class="contact-box">
-<div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-<div class="contact-text">
-<h3>Email</h3>
-<a href="mailto:sreevarshan.ds@gmail.com">sreevarshan.ds@gmail.com</a>
-</div>
+<i class="fa-solid fa-envelope"></i>
+<p>sreevarshan.ds@gmail.com</p>
 </div>
 
 <div class="contact-box">
-<div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-<div class="contact-text">
-<h3>Phone</h3>
+<i class="fa-solid fa-phone"></i>
 <p>+91 7845860060</p>
-</div>
-</div>
-
-<div class="contact-box">
-<div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
-<div class="contact-text">
-<h3>LinkedIn</h3>
-<a href="https://linkedin.com/in/sree-varshan" target="_blank">
-linkedin.com/in/sree-varshan
-</a>
-</div>
-</div>
-
-<div class="contact-box">
-<div class="contact-icon"><i class="fa-brands fa-github"></i></div>
-<div class="contact-text">
-<h3>GitHub</h3>
-<a href="https://github.com/sreevarshan" target="_blank">
-github.com/sreevarshan
-</a>
-</div>
 </div>
 
 </div>
 
 </section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
