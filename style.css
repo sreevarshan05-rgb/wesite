@@ -196,10 +196,11 @@ text-decoration:none;
 font-weight:600;
 }
 
+
 .contact-section{
-background:#111;
-color:white;
 padding:80px 10%;
+background:#0f0f0f;
+color:white;
 }
 
 .contact-sub{
@@ -210,7 +211,7 @@ max-width:600px;
 
 .contact-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:25px;
 }
 
@@ -218,7 +219,7 @@ gap:25px;
 display:flex;
 align-items:center;
 gap:20px;
-background:#1c1c1c;
+background:#1a1a1a;
 padding:25px;
 border-radius:12px;
 border:1px solid #333;
@@ -227,24 +228,26 @@ transition:0.3s;
 
 .contact-box:hover{
 border-color:#ffc107;
-transform:translateY(-3px);
+transform:translateY(-4px);
 }
 
 .contact-icon{
-font-size:26px;
+font-size:28px;
 color:#ffc107;
+min-width:40px;
 }
 
-.contact-box h3{
+.contact-text h3{
 margin:0;
 font-size:15px;
 color:#aaa;
 }
 
-.contact-box a,
-.contact-box p{
-margin-top:5px;
+.contact-text a,
+.contact-text p{
+margin-top:4px;
 color:white;
 text-decoration:none;
 font-size:16px;
 }
+
