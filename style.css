@@ -196,6 +196,32 @@ text-decoration:none;
 font-weight:600;
 }
 
+.contact-container{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+margin-top:20px;
+}
+
+.contact-badge{
+background:#e5e5e5;
+color:black;
+padding:12px 20px;
+border-radius:30px;
+font-size:15px;
+font-weight:500;
+}
+
+.contact-badge a{
+color:black;
+text-decoration:none;
+font-weight:600;
+}
+
+.contact-badge a:hover{
+text-decoration:underline;
+}
+
 
 
 
