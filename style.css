@@ -204,9 +204,10 @@ margin-top:20px;
 }
 
 .contact-badge{
+display:inline-block;
 background:#e5e5e5;
 color:black;
-padding:12px 20px;
+padding:12px 22px;
 border-radius:30px;
 font-size:15px;
 font-weight:500;
@@ -221,7 +222,3 @@ font-weight:600;
 .contact-badge a:hover{
 text-decoration:underline;
 }
-
-
-
-
