@@ -196,29 +196,55 @@ text-decoration:none;
 font-weight:600;
 }
 
-.contact-container{
+.contact-section{
+background:#111;
+color:white;
+padding:80px 10%;
+}
+
+.contact-sub{
+color:#aaa;
+margin-bottom:40px;
+max-width:600px;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.contact-box{
 display:flex;
-flex-wrap:wrap;
-gap:15px;
-margin-top:20px;
+align-items:center;
+gap:20px;
+background:#1c1c1c;
+padding:25px;
+border-radius:12px;
+border:1px solid #333;
+transition:0.3s;
 }
 
-.contact-badge{
-display:inline-block;
-background:#e5e5e5;
-color:black;
-padding:12px 22px;
-border-radius:30px;
+.contact-box:hover{
+border-color:#ffc107;
+transform:translateY(-3px);
+}
+
+.contact-icon{
+font-size:26px;
+color:#ffc107;
+}
+
+.contact-box h3{
+margin:0;
 font-size:15px;
-font-weight:500;
+color:#aaa;
 }
 
-.contact-badge a{
-color:black;
+.contact-box a,
+.contact-box p{
+margin-top:5px;
+color:white;
 text-decoration:none;
-font-weight:600;
-}
-
-.contact-badge a:hover{
-text-decoration:underline;
+font-size:16px;
 }
